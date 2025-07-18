@@ -65,25 +65,32 @@ text
 
 ---
 
-## 📂 Project Structure
+### Directory Descriptions
 
-flutter_travel_ai_app/
-├── android/ # Android-specific files
-├── ios/ # iOS-specific files
-├── lib/ # Main Dart source code
-│ ├── main.dart # App entry point
-│ ├── screens/ # Feature screens
-│ ├── models/ # Data models
-│ ├── services/ # API & AI services
-│ ├── widgets/ # Reusable widgets
-│ ├── providers/ # State management
-│ └── utils/ # Utilities
-├── assets/ # Static resources (images, fonts)
-├── test/ # Automated tests
-├── pubspec.yaml # Dependencies & metadata
-└── README.md # Project documentation
+- **android/** & **ios/**  
+  Platform-specific configuration and launcher icons required for building on Android and iOS, respectively.
 
-text
+- **lib/**  
+  Main application logic.
+  - `main.dart`: Entry point initializing the app and theming.
+  - `screens/`: All user-facing screens and major features.
+  - `models/`: Dart classes for your domain data (e.g., `Destination`, `Itinerary`).
+  - `services/`: Handles data retrieval and AI (API integrations).
+  - `widgets/`: Custom, reusable components for UI consistency.
+  - `providers/`: Business logic and state management (e.g., for Provider/ChangeNotifier).
+  - `utils/`: Helper functions, constants, and utilities.
+
+- **assets/**  
+  Images, fonts, and other static files used in the app.
+
+- **test/**  
+  Unit and widget tests for code integrity.
+
+- **pubspec.yaml**  
+  Flutter/Dart dependencies, assets declaration, and project information.
+
+- **README.md**  
+  Project overview, usage instructions, architecture notes, and contribution guidelines.
 
 ---
 
